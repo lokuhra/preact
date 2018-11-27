@@ -13,11 +13,13 @@
     "axios": "^0.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-icons": "^3.2.2",
     "react-router": "^4.2.0",
     "react-static": "^5"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
+    "react-hot-loader": "^4.3.12",
     "serve": "^6.1.0"
   }
 }
