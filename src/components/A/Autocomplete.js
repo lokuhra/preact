@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { MdDeleteForever } from 'react-icons/md';
 
 class Autocomplete extends Component {
   constructor(props) {
@@ -138,7 +137,7 @@ class Autocomplete extends Component {
           />
 
           <div className={"icon"}>
-            <MdDeleteForever onClick={this.onClearInput}/>
+            {/*<MdDeleteForever onClick={this.onClearInput}/>*/}
           </div>
 
         </div>
