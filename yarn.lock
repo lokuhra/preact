@@ -1984,6 +1984,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.1:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -2487,6 +2492,11 @@ dargs@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-5.1.0.tgz#ec7ea50c78564cd36c9d5ec18f66329fade27829"
   integrity sha1-7H6lDHhWTNNsnV7Bj2Yyn63ieCk=
+
+date-fns@2.0.0-alpha.7:
+  version "2.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-alpha.7.tgz#245ad16f95764eababfb2c0a41fd5d033c20e57a"
+  integrity sha1-JFrRb5V2Tqur+ywKQf1dAzwg5Xo=
 
 date-now@^0.1.4:
   version "0.1.4"
@@ -3685,6 +3695,11 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     rimraf "~2.6.2"
     write "^0.2.1"
+
+flatpickr@^4.3.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.2.tgz#47c8ad472a096e5fb7e74b809b0703535383f20d"
+  integrity sha512-jDy4QYGpmiy7+Qk8QvKJ4spjDdxcx9cxMydmq1x427HkKWBw0qizLYeYM2F6tMcvvqGjU5VpJS55j4LnsaBblA==
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -6496,7 +6511,7 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.1.tgz#c9242169342b1c29d275889c95734621b1952e31"
   integrity sha512-OE+a6vzqazc+K6LxJrX5UPyKFvGnL5CYmq2jFGNIBWHpc4QyE49/YOumcrpQFJpfejmvRtbJzgO1zPmMCqlbBg==
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@15, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -6663,6 +6678,23 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-date-range@^1.0.0-beta:
+  version "1.0.0-beta"
+  resolved "https://registry.yarnpkg.com/react-date-range/-/react-date-range-1.0.0-beta.tgz#d67957b6af0230ef5cab60d73bf287429aff3856"
+  integrity sha512-04xUpkD9qTq6bFpLqcYTvptw+yFl793o1YB+uCWI+SrIp0eyEE4Aw+R9jaWp5cGnxsRDUqywV0cRd8e1Ys2uYQ==
+  dependencies:
+    classnames "^2.2.1"
+    date-fns "2.0.0-alpha.7"
+    prop-types "^15.5.10"
+    react-list "^0.8.8"
+
+react-day-picker@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-7.2.4.tgz#3c3bea7aa1910bef7bad17f25ff15cd26a7d1848"
+  integrity sha512-LaePKijvAdXTrQhTyU7XfxxD5NQIFb4FH4vr1T862xNtmncoS8jZLliyHieMHNhZZ8RJU1pruqoQzkZQ05646w==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-dev-utils@^4.0.1:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -6702,6 +6734,14 @@ react-error-overlay@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
   integrity sha512-XzgvowFrwDo6TWcpJ/WTiarb9UI6lhA4PMzS7n1joK3sHfBBBOQHUc0U4u57D6DWO9vHv6lVSWx2Q/Ymfyv4hw==
 
+react-flatpickr@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/react-flatpickr/-/react-flatpickr-3.6.4.tgz#41a8406d00d787b629839ae1f5a01ed3bb6e84ac"
+  integrity sha512-s7nCzPvfddkDVQLlwDj8y5iCYVybUGwOQnGt2oyMe7OamteUeF8wt0TCSpeq5WFOCywne/7+7zvrPco/dTq/9Q==
+  dependencies:
+    flatpickr "^4.3.2"
+    prop-types "^15.5.10"
+
 react-helmet@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"
@@ -6733,6 +6773,13 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-list@^0.8.8:
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/react-list/-/react-list-0.8.10.tgz#5bd4864051409c5d3eff34110def54c05af062e6"
+  integrity sha512-7jzShUoyzPp7NxzEs46vs5H1SmNSbPX2jK35KA3CrT43Fv4yYyovWm5lb0CtDIPHeLKf8rTmGOaZQPV9HvoG2w==
+  dependencies:
+    prop-types "15"
 
 react-router-dom@^4.2.2:
   version "4.3.1"
