@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-
-import Flatpickr from 'react-flatpickr'
 import './airbnb.css'
+import Flatpickr from './Flatpickr'
 
-
-
-class App extends Component {
+class Calendar extends Component {
     state = {
-        v: '2016-01-01 01:01',
+        v: '2018-11-23 01:01',
         onChange: (_, str) => {
             console.info(str)
         }
@@ -16,7 +13,7 @@ class App extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState(state => ({
-                v: state.v.replace('2016', '2017'),
+                v: state.v.replace('2017', '2018'),
                 onChange: (_, str) => {
                     console.info('New change handler: ', str)
                 }
@@ -28,11 +25,11 @@ class App extends Component {
         const { v } = this.state
 
         return (
-
-                <Flatpickr value={[v, '2016-01-10']} options={{mode: 'range'}}
+                <Flatpickr value={[v, '2018-11-23']} options={{mode: 'range'}}
                            onChange={(_, str) => console.info(str)} />
 
         )
     }
 }
-export default App
+
+export default Calendar
