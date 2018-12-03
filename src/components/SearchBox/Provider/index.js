@@ -4,7 +4,6 @@ export const { Provider, Consumer } = createContext();
 
 export default class ContextProvider extends Component {
   state = {
-    theme: 'light',
     data: [
       { country: 'argentina', code: 'ar' },
       { country: 'brasil', code: 'br' },
