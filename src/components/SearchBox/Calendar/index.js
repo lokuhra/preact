@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Flatpickr from "./Flatpickr";
+import './airbnb.css'
 
 class Calendar extends Component {
   state = {

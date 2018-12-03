@@ -7,10 +7,13 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "prod": "yarn run build && yarn run start"
   },
   "dependencies": {
+    "@trendmicro/react-dropdown": "^1.3.0",
     "axios": "^0.16.2",
+    "eslint-plugin-babel": "^5.3.0",
     "flatpickr": "^4.5.2",
     "react": "^16.0.0",
     "react-date-range": "^1.0.0-beta",
@@ -18,12 +21,20 @@
     "react-dom": "^16.0.0",
     "react-flatpickr": "^3.6.4",
     "react-icons": "^3.2.2",
+    "react-modal": "^3.6.1",
     "react-router": "^4.2.0",
     "react-static": "^5"
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-tools": "1.x.x",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.15.2",
     "react-hot-loader": "^4.3.12",
     "serve": "^6.1.0"
-  }
+  },
+  "license": "ISC"
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Dropdown, { MenuItem } from '@trendmicro/react-dropdown';
+import './drop.css'
 
 export default () => (
   <Dropdown onToggle={() => {}}>

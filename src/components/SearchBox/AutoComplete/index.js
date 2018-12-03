@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Consumer } from '../Provider';
 import AutoComplete from './AutoComplete';
+import './autocomplete.css'
 
 const AutoCompleteBox = () => (
   <Consumer>
