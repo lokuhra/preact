@@ -1,21 +1,16 @@
 import React, { Component, Fragment } from 'react';
 
-class Autocomplete extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      // The active selection's index
-      activeSuggestion: 0,
-      // The suggestions that match the user's input
-      filteredSuggestions: [],
-      // Whether or not the suggestion list is shown
-      showSuggestions: false,
-      // What the user has entered
-      userInput: ''
-    };
-
-  }
-
+class AutoComplete extends Component {
+  state = {
+    // The active selection's index
+    activeSuggestion: 0,
+    // The suggestions that match the user's input
+    filteredSuggestions: [],
+    // Whether or not the suggestion list is shown
+    showSuggestions: false,
+    // What the user has entered
+    userInput: ''
+  };
 
   onChange = (e) => {
     const { suggestions } = this.props;
@@ -46,7 +41,7 @@ class Autocomplete extends Component {
 
   onClearInput = () => {
     this.setState({
-      userInput: ""
+      userInput: ''
     });
   };
 
@@ -97,7 +92,7 @@ class Autocomplete extends Component {
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
-          <ul class="suggestions">
+          <ul className="suggestions">
             {filteredSuggestions.map((suggestion, index) => {
               let className;
 
@@ -135,11 +130,6 @@ class Autocomplete extends Component {
             onKeyDown={onKeyDown}
             value={userInput}
           />
-
-          <div className={"icon"}>
-            {/*<MdDeleteForever onClick={this.onClearInput}/>*/}
-          </div>
-
         </div>
         {suggestionsListComponent}
       </Fragment>
@@ -147,4 +137,4 @@ class Autocomplete extends Component {
   }
 }
 
-export default Autocomplete;
+export default AutoComplete
